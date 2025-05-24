@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Films for Listening Practice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="background-decor"></div>
+<header class="dynamic-island">
+  <h1>Animated Films for Listening Practice</h1>
+  <a href="index.html" class="main-button">Main Page</a>
+</header>
+
+<div class="container">
+  <div class="video-block">
+    <h2>MONSTERS UNIVERSITY Clip | Scarers</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jshGP-yOv2Q?si=LQeTfFgiyaidbWAX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="paragraph-task">
+      <p>Monsters University (2013) is a fun and inspiring animated film that tells the story of how Mike Wazowski and James P. "Sulley" Sullivan first met as students at Monsters University. Despite their differences, the two must learn to work together to achieve their dream of becoming professional scarers. The film highlights the importance of friendship, teamwork, and believing in yourself.</p>
+    </div>
+
+    <div class="task-section">
+      <p>1. True / False</p>
+      <div class="statement">Mike Wazowski has dreamed of becoming a scarer since he was a child.  
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">Sulley and Mike become best friends from the very beginning of the film
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">Monsters University is a school that trains monsters to be scary.  
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">Monsters University is a school that trains monsters to be scary.  
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">The film shows how Mike and Sulley met and became a team.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+    </div>
+
+    <div class="task-section">
+      <p>2. Answer the Questions</p>
+      <label>1. What is Mike Wazowski’s biggest dream at the beginning of the movie?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>2. How does Sulley first meet Mike at Monsters University?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>3. What kind of program does Monsters University offer?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>4. Why do Mike and Sulley get in trouble at the university?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>5. How do Mike and Sulley prove themselves as a good team?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+    </div>
+
+    <div class="task-section">
+      <p>3. Matching Task</p>
+      <table>
+        <thead>
+          <tr><th>A (Words)</th><th>B (Select Match)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Mike Wazowski</td>
+            <td>
+              <select>  
+                <option value="">Select...</option>
+                <option>A. A competition where students prove their scaring skills</option>
+                <option>B. Learns that teamwork is more important than talent alone</option>
+                <option>C. A determined student who dreams of becoming a scarer</option>
+                <option>D. A famous scarer’s son with natural talent</option>
+                <option>E. A school that trains monsters to become professional scarers</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>2. James P. “Sulley” Sullivan</td>
+            <td>
+              <select><option value="">Select...</option>
+                <option>A. A competition where students prove their scaring skills</option>
+                <option>B. Learns that teamwork is more important than talent alone</option>
+                <option>C. A determined student who dreams of becoming a scarer</option>
+                <option>D. A famous scarer’s son with natural talent</option>
+                <option>E. A school that trains monsters to become professional scarers</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>3. Monsters University</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. A competition where students prove their scaring skills</option>
+                <option>B. Learns that teamwork is more important than talent alone</option>
+                <option>C. A determined student who dreams of becoming a scarer</option>
+                <option>D. A famous scarer’s son with natural talent</option>
+                <option>E. A school that trains monsters to become professional scarers</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>4. Scare Games</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. A competition where students prove their scaring skills</option>
+                <option>B. Learns that teamwork is more important than talent alone</option>
+                <option>C. A determined student who dreams of becoming a scarer</option>
+                <option>D. A famous scarer’s son with natural talent</option>
+                <option>E. A school that trains monsters to become professional scarers</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>5. Final Lesson</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. A competition where students prove their scaring skills</option>
+                <option>B. Learns that teamwork is more important than talent alone</option>
+                <option>C. A determined student who dreams of becoming a scarer</option>
+                <option>D. A famous scarer’s son with natural talent</option>
+                <option>E. A school that trains monsters to become professional scarers</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="check-button" onclick="checkAnswers()">Check Answers</button>
+    <div id="score" class="score"></div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Listening Through Animation – Designed for English Lessons</p>
+</footer>
+
+<script>
+  // Чекбоксы ведут себя как радиокнопки
+  document.querySelectorAll('.statement').forEach(statement => {
+    const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(chk => {
+      chk.addEventListener('change', () => {
+        checkboxes.forEach(box => {
+          if (box !== chk) box.checked = false;
+        });
+      });
+    });
+  });
+
+  function lockInput(event, input) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      input.setAttribute('readonly', true);
+    }
+  }
+
+  function checkAnswers() {
+    let score = 0;
+    const total = 15;
+
+    // === TRUE/FALSE ===
+    const trueFalseAnswers = [true, false, true, false, true];
+    const trueFalseSection = document.querySelectorAll('.task-section')[0];
+    trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
+      const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+      const isTrueChecked = checkboxes[0].checked;
+      const correct = isTrueChecked === trueFalseAnswers[i];
+      statement.classList.remove('correct', 'incorrect');
+      statement.classList.add(correct ? 'correct' : 'incorrect');
+      if (correct) score++;
+    });
+
+const expectedAnswers = [
+  'To become a scarer',
+  'In class at Monsters University',
+  'A scaring program',
+  'They break school rules',
+  'They win the scare competition through teamwork'
+];
+
+const normalize = str => str
+  .toLowerCase()
+  .replace(/[.,;!?]/g, '')  // убираем знаки препинания
+  .trim();
+
+const questionSection = document.querySelectorAll('.task-section')[1];
+
+questionSection.querySelectorAll('input[type="text"]').forEach((input, i) => {
+  const userAnswer = normalize(input.value);
+  const expectedAnswer = normalize(expectedAnswers[i]);
+  const correct = userAnswer.includes(expectedAnswer); // или: userAnswer === expectedAnswer
+  input.classList.remove('correct', 'incorrect');
+  input.classList.add(correct ? 'correct' : 'incorrect');
+  if (correct) score++;
+});
+
+
+
+    // === MATCHING TASK ===
+    const correctMatches = [
+      'C. A determined student who dreams of becoming a scarer',
+      'D. A famous scarer’s son with natural talent',
+      'E. A school that trains monsters to become professional scarers',
+      'A. A competition where students prove their scaring skills',
+      'B. Learns that teamwork is more important than talent alone'
+    ];
+    const matchSection = document.querySelectorAll('.task-section')[2];
+    matchSection.querySelectorAll('select').forEach((select, i) => {
+      const correct = select.value === correctMatches[i];
+      select.classList.remove('correct', 'incorrect');
+      select.classList.add(correct ? 'correct' : 'incorrect');
+      if (correct) score++;
+    });
+
+    // === DISPLAY RESULT ===
+    document.getElementById('score').textContent = `Your score: ${score} / ${total}`;
+  }
+</script>
+
+
+</body>
+</html>

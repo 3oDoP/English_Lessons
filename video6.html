@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Films for Listening Practice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="background-decor"></div>
+<header class="dynamic-island">
+  <h1>Animated Films for Listening Practice</h1>
+  <a href="index.html" class="main-button">Main Page</a>
+</header>
+
+<div class="container">
+  <div class="video-block">
+    <h2>Migration | The Duck L'Orange Chef Scene</h2>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/hyvHNllToBI?si=f-g5Vf8j9Myj2Y5X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="paragraph-task">
+      <p>In this comedic scene from Migration (2023), a duck finds himself in a fancy French kitchen where he is nearly turned into a gourmet dish. As the chef prepares “Duck à l’Orange,” the duck must rely on his wits and quick moves to escape. The moment is full of suspense and humor, showing the duck’s cleverness in the face of danger.</p>
+    </div>
+
+    <div class="task-section">
+      <p>1. True / False</p>
+      <div class="statement">The duck sneaks into a restaurant kitchen during this scene.  
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">The chef in the restaurant is kind and helps the duck escape.  
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">The duck is in danger of being cooked as a dish.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">This scene is serious and dramatic with no humor.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">The setting of the scene takes place inside a fancy restaurant.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+    </div>
+
+    <div class="task-section">
+      <p>2. Answer the Questions</p>
+      <label>1. What is the duck doing at the beginning of the scene?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>2. Why is the duck afraid in the kitchen?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>3. Who is the biggest threat to the duck in this scene?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>4. How does the duck try to avoid being caught?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>5. What is the overall mood or tone of the scene?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+    </div>
+
+    <div class="task-section">
+      <p>3. Matching Task</p>
+      <table>
+        <thead>
+          <tr><th>A (Words)</th><th>B (Select Match)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. The Duck</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. The main setting where the duck sneaks in</option>
+                <option>B. The character trying to avoid being cooked</option>
+                <option>C. Emotion shown when the duck realizes the danger</option>
+                <option>D. Tries to catch and cook the duck</option>
+                <option>E. The duck’s clever way to survive and run away</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>2. The Chef</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. The main setting where the duck sneaks in</option>
+                <option>B. The character trying to avoid being cooked</option>
+                <option>C. Emotion shown when the duck realizes the danger</option>
+                <option>D. Tries to catch and cook the duck</option>
+                <option>E. The duck’s clever way to survive and run away</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>3. The Kitchen</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. The main setting where the duck sneaks in</option>
+                <option>B. The character trying to avoid being cooked</option>
+                <option>C. Emotion shown when the duck realizes the danger</option>
+                <option>D. Tries to catch and cook the duck</option>
+                <option>E. The duck’s clever way to survive and run away</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>4. Fear</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. The main setting where the duck sneaks in</option>
+                <option>B. The character trying to avoid being cooked</option>
+                <option>C. Emotion shown when the duck realizes the danger</option>
+                <option>D. Tries to catch and cook the duck</option>
+                <option>E. The duck’s clever way to survive and run away</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>5. Escape Plan</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>A. The main setting where the duck sneaks in</option>
+                <option>B. The character trying to avoid being cooked</option>
+                <option>C. Emotion shown when the duck realizes the danger</option>
+                <option>D. Tries to catch and cook the duck</option>
+                <option>E. The duck’s clever way to survive and run away</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="check-button" onclick="checkAnswers()">Check Answers</button>
+    <div id="score" class="score"></div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Listening Through Animation – Designed for English Lessons</p>
+</footer>
+
+<script>
+  // Чекбоксы ведут себя как радиокнопки
+  document.querySelectorAll('.statement').forEach(statement => {
+    const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(chk => {
+      chk.addEventListener('change', () => {
+        checkboxes.forEach(box => {
+          if (box !== chk) box.checked = false;
+        });
+      });
+    });
+  });
+
+  function lockInput(event, input) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      input.setAttribute('readonly', true);
+    }
+  }
+
+  function checkAnswers() {
+    let score = 0;
+    const total = 15;
+// === TRUE/FALSE === 
+const trueFalseAnswers = [true, false, true, false, true];
+const trueFalseSection = document.querySelectorAll('.task-section')[0];
+trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
+  const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+  const isTrueChecked = checkboxes[0].checked;
+  const correct = isTrueChecked === trueFalseAnswers[i];
+  statement.classList.remove('correct', 'incorrect');
+  statement.classList.add(correct ? 'correct' : 'incorrect');
+  if (correct) score++;
+});
+
+// === SHORT ANSWERS ===
+const expectedAnswers = [
+  'He is exploring the kitchen',
+  'Because he realizes the chef wants to cook him',
+  'The chef',
+  'He uses clever tricks and runs away',
+  'The tone is humorous and adventurous'
+];
+
+const normalize = str => str
+  .toLowerCase()
+  .replace(/[.,;!?]/g, '')  // remove punctuation
+  .trim();
+
+const questionSection = document.querySelectorAll('.task-section')[1];
+
+questionSection.querySelectorAll('input[type="text"]').forEach((input, i) => {
+  const userAnswer = normalize(input.value);
+  const expectedAnswer = normalize(expectedAnswers[i]);
+  const correct = userAnswer.includes(expectedAnswer);
+  input.classList.remove('correct', 'incorrect');
+  input.classList.add(correct ? 'correct' : 'incorrect');
+  if (correct) score++;
+});
+
+// === MATCHING TASK ===
+const correctMatches = [
+  'B. The character trying to avoid being cooked',
+  'D. Tries to catch and cook the duck',
+  'A. The main setting where the duck sneaks in',
+  'C. Emotion shown when the duck realizes the danger',
+  'E. The duck’s clever way to survive and run away'
+];
+
+const matchSection = document.querySelectorAll('.task-section')[2];
+matchSection.querySelectorAll('select').forEach((select, i) => {
+  const correct = select.value === correctMatches[i];
+  select.classList.remove('correct', 'incorrect');
+  select.classList.add(correct ? 'correct' : 'incorrect');
+  if (correct) score++;
+});
+
+    // === DISPLAY RESULT ===
+    document.getElementById('score').textContent = `Your score: ${score} / ${total}`;
+  }
+</script>
+
+
+</body>
+</html>
