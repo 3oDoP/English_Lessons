@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Films for Listening Practice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="background-decor"></div>
+<header class="dynamic-island">
+  <h1>Animated Films for Listening Practice</h1>
+  <a href="index.html" class="main-button">Main Page</a>
+</header>
+
+<div class="container">
+  <div class="video-block">
+    <h2>The Littlest Princess | Sofia The First </h2>
+    <iframe width="560" height="485" src="https://www.youtube.com/embed/WKaIjiGrpfY?si=u5bPAiPYuwtS8dx-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="paragraph-task">
+      <p>In this scene from Tangled, Rapunzel meets Flynn Rider for the first time when he unexpectedly climbs into her tower. Surprised and scared, Rapunzel uses a frying pan to protect herself and ties Flynn up with her long magical hair. She questions him to learn more about the outside world. The scene is funny and shows Rapunzel’s bravery and curiosity.</p>
+    </div>
+
+    <div class="task-section">
+      <p>1. True / False</p>
+      <div class="statement">Sofia is a little princess.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">Sofia wears a yellow dress in the video.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">She is holding a basket of flowers.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">There is a fountain behind Sofia.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+      <div class="statement">Sofia looks angry in this scene.
+        <label><input type="checkbox"> True</label>
+        <label><input type="checkbox"> False</label>
+      </div>
+    </div>
+
+    <div class="task-section">
+      <p>2. Answer the Questions</p>
+      <label>1. What is Sofia holding in her hand?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>2. What color is Sofia’s dress?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>3. Where is Sofia standing in this scene?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>4. What kind of place do you think this is — a garden, a palace, or a forest?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      <label>5. How does Sofia feel in this scene? Why?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+    </div>
+
+    <div class="task-section">
+      <p>3. Matching Task</p>
+      <table>
+        <thead>
+          <tr><th>A (Words)</th><th>B (Select Match)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Sofia</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>The main character, a young princess</option>
+                <option>What she wears</option>
+                <option>What she uses to carry flowers</option>
+                <option>A water feature in the background</option>
+                <option>What she picks from the garden</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>2. Dress</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>The main character, a young princess</option>
+                <option>What she wears</option>
+                <option>What she uses to carry flowers</option>
+                <option>A water feature in the background</option>
+                <option>What she picks from the garden</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>3. Basket</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>The main character, a young princess</option>
+                <option>What she wears</option>
+                <option>What she uses to carry flowers</option>
+                <option>A water feature in the background</option>
+                <option>What she picks from the garden</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>4. Fountain</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>The main character, a young princess</option>
+                <option>What she wears</option>
+                <option>What she uses to carry flowers</option>
+                <option>A water feature in the background</option>
+                <option>What she picks from the garden</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>5. Flowers</td>
+            <td>
+              <select>
+                <option value="">Select...</option>
+                <option>The main character, a young princess</option>
+                <option>What she wears</option>
+                <option>What she uses to carry flowers</option>
+                <option>A water feature in the background</option>
+                <option>What she picks from the garden</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="check-button" onclick="checkAnswers()">Check Answers</button>
+    <div id="score" class="score"></div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Listening Through Animation – Designed for English Lessons</p>
+</footer>
+
+<script>
+  // Чекбоксы ведут себя как радиокнопки
+  document.querySelectorAll('.statement').forEach(statement => {
+    const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(chk => {
+      chk.addEventListener('change', () => {
+        checkboxes.forEach(box => {
+          if (box !== chk) box.checked = false;
+        });
+      });
+    });
+  });
+
+  function lockInput(event, input) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      input.setAttribute('readonly', true);
+    }
+  }
+
+  function checkAnswers() {
+    let score = 0;
+    const total = 15;
+
+    // === TRUE/FALSE ===
+    const trueFalseAnswers = [true, false, true, true, false];
+    const trueFalseSection = document.querySelectorAll('.task-section')[0];
+    trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
+      const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+      const isTrueChecked = checkboxes[0].checked;
+      const correct = isTrueChecked === trueFalseAnswers[i];
+      statement.classList.remove('correct', 'incorrect');
+      statement.classList.add(correct ? 'correct' : 'incorrect');
+      if (correct) score++;
+    });
+
+    // === ANSWER THE QUESTIONS ===
+    const expectedAnswers = ['basket', 'purple', 'garden', 'garden', 'happy'];
+    const questionSection = document.querySelectorAll('.task-section')[1];
+    questionSection.querySelectorAll('input[type="text"]').forEach((input, i) => {
+      const val = input.value.trim().toLowerCase();
+      const correct = val.includes(expectedAnswers[i]);
+      input.classList.remove('correct', 'incorrect');
+      input.classList.add(correct ? 'correct' : 'incorrect');
+      if (correct) score++;
+    });
+
+    // === MATCHING TASK ===
+    const correctMatches = [
+      'The main character, a young princess',
+      'What she wears',
+      'What she uses to carry flowers',
+      'A water feature in the background',
+      'What she picks from the garden'
+    ];
+    const matchSection = document.querySelectorAll('.task-section')[2];
+    matchSection.querySelectorAll('select').forEach((select, i) => {
+      const correct = select.value === correctMatches[i];
+      select.classList.remove('correct', 'incorrect');
+      select.classList.add(correct ? 'correct' : 'incorrect');
+      if (correct) score++;
+    });
+
+    // === DISPLAY RESULT ===
+    document.getElementById('score').textContent = `Your score: ${score} / ${total}`;
+  }
+</script>
+
+
+</body>
+</html>

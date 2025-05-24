@@ -1,0 +1,212 @@
+
+body {
+    font-family: 'Comic Neue', sans-serif;
+    background: 	#D2B48C;
+    color: #708090;
+    font-size: 20px;
+    margin: 70px 20px 0 20px;
+}
+
+.dynamic-island {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 70px;
+    background: linear-gradient(90deg, #6a0dad, #9d4edd);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+}
+.dynamic-island::before {
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='white'/%3E%3Crect x='100' y='100' width='5' height='25' fill='white' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='white'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='white'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    animation: moveIslandBackground 120s linear infinite;
+    z-index: -1;
+}
+.dynamic-island h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+}
+
+.main-button {
+  background-color: white;
+  color: #6a0dad;
+  padding: 35px 25px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Comic Neue', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: auto;
+}
+
+.main-button:hover {
+  background-color: #e0ccff;
+  color: #4b0082;
+}
+@keyframes moveIslandBackground {
+    0% {transform: translate(0,0);} 100% {transform: translate(-600px,-600px);}   
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.video-block {
+    background-color: 	#e8cca8;
+    border-radius: 35px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #708090;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    border: none;
+}
+
+.paragraph-task {
+    background-color: #37414F;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 35px;
+    margin-top: 10px;
+}
+
+.task-section {
+    background-color: #37414F;
+    border-radius: 35px;
+    padding: 15px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+.task-section td {
+    background-color: #37414F;
+}
+
+.statement {
+    margin-bottom: 10px;
+}
+
+.statement label {
+    margin-right: 15px;
+}
+
+.task-section input[type="text"] {
+    width: 98%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+input[readonly] {
+    background-color: #e0e0e0;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #37414F;
+    color: white;
+}
+
+select {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+.check-button {
+    display: block;
+    margin: 30px auto 10px auto;
+    padding: 10px 25px;
+    background-color: #37414F;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.check-button:hover {
+    background-color: #37414F;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    color: #666;
+}
+
+.correct {
+    color: #20ff03;
+}
+
+.incorrect {
+    color: #ff0019;
+}
+
+.score {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    color: #708090;
+    font-weight: bold;
+}
+.background-decor {
+position: fixed;
+top: 0;
+left: 0;
+width: 400%; height: 400%;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='%23708090'/%3E%3Crect x='100' y='100' width='5' height='25' fill='%23708090' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='%23708090'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='%23708090'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='%23708090'/%3E%3C/svg%3E");
+background-repeat: repeat;
+background-size: 300px 300px;
+animation: moveBackground 180s linear infinite;
+z-index: -1;
+}
+@keyframes moveBackground {
+    0% {transform: translate(0,0);} 100% {transform: translate(-1500px,-1500px);}   
+}

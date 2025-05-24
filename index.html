@@ -2,348 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Animated Films for Listening Practice</title>
+  <title> </title>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="style.css">
 
-  <style>
-    body {
-      font-family: 'Comic Neue', sans-serif;
-      background: #f0f8ff;
-      color: #333;
-      font-size: 20px;
-      margin-top: 70px; /* Отступ чтобы контент не заходил под header */
-      margin: 50    ;
-      padding: 0;
-      background-color: #f4f0ff;
-      overflow-x: hidden;
-    }
-    .dynamic-island {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 70px;
-    background: linear-gradient(90deg, #6a0dad, #9d4edd); /* Градиент от фиолетового к светло-фиолетовому */
+  </head>
+  <body>
+    <div class="background-decor"></div>
+    <header class="dynamic-island">
+      <h1>Animated Films for Listening Practice</h1>
 
-    border-radius: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-    font-family: 'Comic Neue', sans-serif;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    overflow: hidden; /* Скрыть выходящие фигуры */
-    z-index: 1000;
-    position: fixed;
-    }
-
-    .dynamic-island::before {
-    content: "";
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300%;
-    height: 300%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='white'/%3E%3Crect x='100' y='100' width='5' height='25' fill='white' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='white'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='white'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='white'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 300px 300px;
-    animation: moveIslandBackground 120s linear infinite;
-    z-index: -1;
-    }
-
-    @keyframes moveIslandBackground {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-600px, -600px);
-    }
-    }
-    .background-decor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 400%;
-    height: 400%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='%236a0dad'/%3E%3Crect x='100' y='100' width='5' height='25' fill='%238a2be2' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='%239b30ff'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='%237b68ee'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='%236a5acd'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 300px 300px;
-    animation: moveBackground 180s linear infinite;
-    z-index: -1;
-    }
-
-    @keyframes moveBackground {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-1500px, -1500px);
-    }
-    }
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .video-block {
-
-      background-color: #ffffff;
-      border-radius: 35px;
-      padding: 20px;
-      padding-top: 1px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgb(0, 0, 0);
-      transition: 0.3s;
-    }
-
-    .video-block:hover {
-      box-shadow: 0 6px 35px #6a0dad;
-    }
-
-    h2 {
-      color: #6a0dad;
-      margin-bottom: 10px;
-    }
-
-    .youtube-frame {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: none;
-      border-radius: 12px;
-    }
-
-    ul {
-      list-style-type: "⭐ ";
-      padding-left: 20px;
-    }
-
-    .task-section {
-      background: linear-gradient(90deg, #6a0dad, #9d4edd); /* Градиент от фиолетового к светло-фиолетовому */
-
-      border-radius: 35px;
-      padding: 15px;
-      margin-top: 15px;
-      color: #ffffff;
-    }
-
-    .task-section p {   
-      font-weight: bold;
-      color: #ffffff;
-          }
-
-    .paragraph-task {
-      background: linear-gradient(90deg, #6a0dad, #9d4edd); /* Градиент от фиолетового к светло-фиолетовому */
-      color: white;
-      padding: 10px;
-      border-radius: 35px;
-      margin-top: 5px;
-      text-align: justify;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 14px;
-      padding: 20px;
-      color: #666;
-    }
-
-    .social-icons {
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      font-size: 24px;
-      color: #6ec6ff;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #1565c0;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        font-size: 22px;
-      }
-    }
-  </style>
-  
-</head>
-<body>
-<div class="background-decor"></div>
-<header class="dynamic-island">
-  <h1>The Use of Animated Films in Teaching Listening in English Lessons</h1>
-</header>
+    </header>
+    <div class="container">
+      <!-- Example block linking to separate page -->
+      <a href="video1.html" class="video-link">
+        <div class="video-block">
+          <h2>Elsa & Anna's Snow Scenes | Frozen</h2>
+          <iframe class="youtube-frame" src="photos/1.jpg" allowfullscreen></iframe>
+        </div>
+      </a>
+      <a href="video2.html" class="video-link">
+        <div class="video-block">
+          <h2>Video 2: Hair Love</h2>
+          <iframe class="youtube-frame" src="https://www.youtube.com/embed/kNw8V_Fkw28" allowfullscreen></iframe>
+        </div>
+      </a>
+    <a href="video3.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 3: Snack Attack</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/38y_1EWIE9I" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video4.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 4: La Luna</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/CCQ9v6XMC6c" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video5.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 5: The Blue Umbrella</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/t5aziLb8IrI" allowfullscreen></iframe>
+      </div>
+    </a>
+        <a href="video1.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 1: The Present</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/3XA0bB79oGc" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video2.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 2: Hair Love</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/kNw8V_Fkw28" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video3.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 3: Snack Attack</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/38y_1EWIE9I" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video4.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 4: La Luna</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/CCQ9v6XMC6c" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video5.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 5: The Blue Umbrella</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/t5aziLb8IrI" allowfullscreen></iframe>
+      </div>
+    </a>
+            <a href="video1.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 1: The Present</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/3XA0bB79oGc" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video2.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 2: Hair Love</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/kNw8V_Fkw28" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video3.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 3: Snack Attack</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/38y_1EWIE9I" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video4.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 4: La Luna</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/CCQ9v6XMC6c" allowfullscreen></iframe>
+      </div>
+    </a>
+    <a href="video5.html" class="video-link">
+      <div class="video-block">
+        <h2>Video 5: The Blue Umbrella</h2>
+        <iframe class="youtube-frame" src="https://www.youtube.com/embed/t5aziLb8IrI" allowfullscreen></iframe>
+      </div>
+    </a>
     
-
-
-<div class="container">
-  <div class="video-block">
-    <h2>Video 1: The Present</h2>
-    <iframe width="860" height="483" src="https://www.youtube.com/embed/3XA0bB79oGc?si=tzW9N338kMLpHlJt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <div class="paragraph-task">
-      <p>“The Present” is a touching short animated film that tells the story of a boy who initially rejects a puppy given to him as a gift because the dog has only three legs. Over time, the boy overcomes his prejudices and embraces the dog, revealing that he himself uses a prosthetic leg. The film teaches important lessons about acceptance, resilience, and kindness. The video contains minimal dialogue, making it ideal for focusing on visual comprehension and emotional vocabulary.</p>
-      
-    </div>
-
-    <div class="task-section">
-      <p>Short Answer Questions:</p>
-      <ul>
-        <li>1. Why did the boy reject the puppy at first?</li>
-        <li>2. What made the boy change his attitude towards the puppy?</li>
-        <li>3. How do the boy and the puppy help each other?</li>
-      </ul>
-    </div>
-
-    <div class="task-section">
-      <p>True/False:</p>
-      <ul>
-        <li>1. The boy was immediately happy to receive the puppy.</li>
-        <li>2. The puppy had a missing eye.</li>
-        <li>3. The boy and the puppy both had physical disabilities.</li>
-        <li>4. The boy never accepted the puppy.</li>
-      </ul>
-    </div>
   </div>
-
-  <div class="video-block">
-    <h2>Video 2: Hair Love</h2>
-    <iframe width="860" height="483" src="https://www.youtube.com/embed/kNw8V_Fkw28?si=g9sl5ibzwmn_CNhh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <div class="paragraph-task">
-      <p>A short film about a father who learns how to do his daughter’s hair for the first time. Despite facing challenges, he works hard to get it right and make her feel beautiful. The film showcases the bond between a father and his daughter, emphasizing patience, love, and family support.
-        </p>
-      
-    </div>
-
-    <div class="task-section">
-      <p>Fill in the missing words in key sentences from the dialogue.</p>
-      <ul>
-        <li>1.“I can’t ___ this.”</li>
-        <li>2.“Don’t worry, daddy, I’m ___.”</li>
-        <li>3.“I’ll make sure you look ___ for the special day.”</li>
-      </ul>
-    </div>
-
-    <div class="task-section">
-      <p>True/False:</p>
-      <ul>
-        <li>1. The father is experienced at doing his daughter’s hair.</li>
-        <li>2. The daughter initially does not want her father to do her hair.</li>
-        <li>3. The father succeeds on his first attempt.</li>
-        <li>4. The mother helps the father throughout the process.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="video-block">
-    <h2>Video 3: Snack Attack</h2>
-    <iframe width="860" height="483" src="https://www.youtube.com/embed/38y_1EWIE9I?si=xtlzI-UY_9ZPd9vT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <div class="paragraph-task">
-      <p>A short film about an elderly woman who thinks a young man is stealing her cookies at a train station. However, the situation turns out to be completely different, with a surprising and humorous twist at the end. The film highlights how assumptions can lead to misunderstandings and emphasizes the importance of looking at things from a different perspective.</p>
-      
-    </div>
-
-    <div class="task-section">
-      <p>True/False:</p>
-      <ul>
-        <li>1. The elderly woman is convinced that the young man is stealing her cookies.</li>
-        <li>2. The young man is trying to take her cookies while she is distracted.</li>
-        <li>3. The elderly woman eventually realizes that she was wrong about the young man.</li>
-        <li>4. The twist involves another person who steals the cookies.</li>
-      </ul>
-    </div>
-
-    <div class="task-section">
-      <p>Fill in the missing words in key sentences from the dialogue.</p>
-      <ul>
-        <li>1. “I saw you ___ my cookies!”</li>
-        <li>2. “I didn’t take your ___!”</li>
-        <li>3. “The real thief is ___ next to you.”</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="video-block">
-    <h2>Video 4: La Luna</h2>
-    <iframe width="860" height="483" src="https://www.youtube.com/embed/CCQ9v6XMC6c?si=UJKRtybtceGs59ay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <div class="paragraph-task">
-      <p>A young boy joins his father and grandfather on their boat to the moon, where they work together to sweep the stars. The film explores the theme of family traditions and finding one’s own path.ography matters?</p>
-      
-    </div>
-
-    <div class="task-section">
-      <p>True/False:</p>
-      <ul>
-        <li>1.The boy is the only one who knows how to sweep the stars.</li>
-        <li>2.The boy is unsure about his role in the family tradition.</li>
-        <li>3.The father and grandfather help the boy discover his unique way of sweeping the stars.</li>
-        <li>4.The boy decides to sweep the stars differently from his family.</li>
-      </ul>
-    </div>
-
-    <div class="task-section">
-      <p>Write a short paragraph about how the boy discovers his own way of doing things.</p>
-      <ul>(For example: “The boy realizes that he can contribute to the family tradition in his own unique way.”)
-      </ul>
-    </div>
-
-    <div class="video-block">
-    <h2>Video 5: The Blue Umbrella</h2>
-    <iframe width="860" height="483" src="https://www.youtube.com/embed/t5aziLb8IrI?si=JyJUeU_QIfEouTaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <div class="paragraph-task">
-      <p>In a bustling city, a blue umbrella falls in love with a red umbrella. Through a series of events, they are reunited, showing that even ordinary objects can have meaningful connections.
-</p>
-      
-    </div>
-
-    <div class="task-section">
-      <p>True/False:</p>
-      <ul>
-        <li>1. The blue umbrella falls in love with a red umbrella.</li>
-        <li>2. The umbrellas belong to different people.</li>
-        <li>3. The blue umbrella and the red umbrella are separated during a storm.</li>
-        <li>4. The blue umbrella finds its way back to the red umbrella.</li>
-      </ul>
-    </div>
-
-    <div class="task-section">
-      <p>Describe the setting and the emotions of the umbrellas.</p>
-      <ul>
-        How do the environments and situations affect the umbrellas’ feelings?
-      </ul>
-    </div>
-
-    <div class="task-section">
-      <p>Write a short paragraph about the theme of love in the film.</p>
-      <ul>
-        (For example: “The story shows that even simple objects can have meaningful connections, symbolizing love and longing.”)
-      </ul>
-    </div>
-
-</div>
-
-<footer>
-  <!-- <div class="social-icons">
-    <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="https://t.me" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-    <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-  </div> -->
-  <p>© 2025 Listening Through Animation – Designed for School Lessons</p>
-</footer>
-
+  <footer>
+    <p>© 2025 Listening Through Animation – Designed for School Lessons</p>
+  </footer>
 </body>
 </html>
