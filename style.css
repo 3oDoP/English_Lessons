@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Comic Neue', sans-serif;
-    background-color: #f4f0ff;
+    background-color: #ffff99;
     color: #333;
     font-size: 20px;
     margin: 0;
@@ -17,12 +17,12 @@ body {
     transform: translateX(-50%);
     width: 90%;
     height: 70px;
-    background: linear-gradient(90deg, #6a0dad, #9d4edd);
+    background: #FFFF66;
     border-radius: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #9e7750;
     font-size: 18px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -36,7 +36,7 @@ body {
     left: 0;
     width: 300%;
     height: 300%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='white'/%3E%3Crect x='100' y='100' width='5' height='25' fill='white' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='white'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='white'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='white'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='CCCCCC'/%3E%3Crect x='100' y='100' width='5' height='25' fill='CCCCCC' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='CCCCCC'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='CCCCCC'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='CCCCCC'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 300px 300px;
     animation: moveIslandBackground 120s linear infinite;
@@ -55,15 +55,15 @@ body {
 
 /* Background decoration */
 .background-decor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 400%; height: 400%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='%236a0dad'/%3E%3Crect x='100' y='100' width='5' height='25' fill='%238a2be2' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='%239b30ff'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='%237b68ee'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='%236a5acd'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 300px 300px;
-    animation: moveBackground 180s linear infinite;
-    z-index: -1;
+position: fixed;
+top: 0;
+left: 0;
+width: 400%; height: 400%;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='50' cy='50' r='10' fill='%23999999'/%3E%3Crect x='100' y='100' width='5' height='25' fill='%23999999' transform='rotate(45 100 100)'/%3E%3Cpolygon points='200,50 210,70 190,70' fill='%23999999'/%3E%3Cpolygon points='250,150 260,170 240,170' fill='%23999999'/%3E%3Cpath d='M280,80 l6,12 l-12,0 Z' fill='%23999999'/%3E%3C/svg%3E");
+background-repeat: repeat;
+background-size: 300px 300px;
+animation: moveBackground 180s linear infinite;
+z-index: -1;
 }
 @keyframes moveBackground {
     0% {transform: translate(0,0);} 100% {transform: translate(-1500px,-1500px);}   
@@ -78,21 +78,19 @@ body {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
-.container2 {
-    padding: 100px 20px 40px;
-    /* max-width: 1200px; */
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
+
 .video-link {
-    display: block;
     text-decoration: none;
     color: inherit;
+    display: block;
+}
+.video-thumbnail {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
 }
 .video-block {
-    background-color: #ffffff;
+    background-color: #FFFF66;
     border-radius: 20px;
     padding: 15px;
     padding-top: 0.5px;
@@ -100,10 +98,10 @@ body {
     transition: box-shadow 0.3s;
 }
 .video-block:hover {
-    box-shadow: 0 6px 35px #6a0dad;
+    box-shadow: 0 6px 35px #a8a800;
 }
 .video-block h2 {
-    color: #6a0dad;
+    color: #9e7750;
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
