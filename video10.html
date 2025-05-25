@@ -1,215 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Animated Films for Listening Practice</title>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-<div class="background-decor"></div>
-<header class="dynamic-island">
-  <h1>Animated Films for Listening Practice</h1>
-  <a href="index.html" class="main-button">Main Page</a>
-</header>
+  <div class="background-decor"></div>
+  <header class="dynamic-island">
+    <h1>Animated Films for Listening Practice</h1>
+    <a href="index.html" class="main-button">Main Page</a>
+  </header>
 
-<div class="container">
-  <div class="video-block">
-    <h2>Zootopia | Meet the Sloth</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/HHKwnUa3txo?si=G72typVKOwmtV2KS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <div class="paragraph-task">
-      <p>In this funny scene from Zootopia, Officer Judy Hopps and Nick Wilde visit the DMV to find important information. There, they meet Flash, a sloth who moves and talks very slowly. Judy is in a hurry, but Flash’s slow pace makes things difficult. The scene is full of humor and shows how patience is sometimes necessary.</p>
+  <div class="container">
+    <div class="video-block">
+      <h2>Zootopia | Meet the Sloth</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HHKwnUa3txo?si=G72typVKOwmtV2KS"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="paragraph-task">
+        <p>In this funny scene from Zootopia, Officer Judy Hopps and Nick Wilde visit the DMV to find important
+          information. There, they meet Flash, a sloth who moves and talks very slowly. Judy is in a hurry, but Flash’s
+          slow pace makes things difficult. The scene is full of humor and shows how patience is sometimes necessary.
+        </p>
+      </div>
+
+      <div class="task-section">
+        <p>1. True / False</p>
+        <div class="statement">Judy Hopps is a police officer.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">Nick is very serious in this scene.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">Flash the sloth works very fast.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">The DMV is full of slow-moving animals.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">Judy is happy with how fast things are going.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+      </div>
+
+      <div class="task-section">
+        <p>2. Answer the Questions</p>
+        <label>1. Who are the main characters in this scene?<br><input type="text"
+            onkeydown="lockInput(event, this)"></label>
+        <label>2. What kind of animal is Flash?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+        <label>3. Why do Judy and Nick go to the DMV?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+        <label>4. How does Flash react to Nick’s joke?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+        <label>5. How does Judy feel during this scene? Why?<br><input type="text"
+            onkeydown="lockInput(event, this)"></label>
+      </div>
+
+      <div class="task-section">
+        <p>3. Matching Task</p>
+        <table>
+          <thead>
+            <tr>
+              <th>A (Words)</th>
+              <th>B (Select Match)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              | 1. | |
+              | 2. | |
+              | 3. | |
+              | 4. | |
+
+
+              <td>1. Judy Hopps</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. Makes a joke to test Flash’s reaction</option>
+                  <option>B. A sloth who types very slowly</option>
+                  <option>C. A rabbit police officer in a hurry</option>
+                  <option>D. A place where animals register vehicles</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>2. Nick Wilde</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. Makes a joke to test Flash’s reaction</option>
+                  <option>B. A sloth who types very slowly</option>
+                  <option>C. A rabbit police officer in a hurry</option>
+                  <option>D. A place where animals register vehicles</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>3. Flash</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. Makes a joke to test Flash’s reaction</option>
+                  <option>B. A sloth who types very slowly</option>
+                  <option>C. A rabbit police officer in a hurry</option>
+                  <option>D. A place where animals register vehicles</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>4. DMV</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. Makes a joke to test Flash’s reaction</option>
+                  <option>B. A sloth who types very slowly</option>
+                  <option>C. A rabbit police officer in a hurry</option>
+                  <option>D. A place where animals register vehicles</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="check-button" onclick="checkAnswers()">Check Answers</button>
+      <div id="score" class="score"></div>
     </div>
-
-    <div class="task-section">
-      <p>1. True / False</p>
-      <div class="statement">Judy Hopps is a police officer.
-        <label><input type="checkbox"> True</label>
-        <label><input type="checkbox"> False</label>
-      </div>
-      <div class="statement">Nick is very serious in this scene.
-        <label><input type="checkbox"> True</label>
-        <label><input type="checkbox"> False</label>
-      </div>
-      <div class="statement">Flash the sloth works very fast.
-        <label><input type="checkbox"> True</label>
-        <label><input type="checkbox"> False</label>
-      </div>
-      <div class="statement">The DMV is full of slow-moving animals.
-        <label><input type="checkbox"> True</label>
-        <label><input type="checkbox"> False</label>
-      </div>
-      <div class="statement">Judy is happy with how fast things are going.
-        <label><input type="checkbox"> True</label>
-        <label><input type="checkbox"> False</label>
-      </div>
-    </div>
-
-    <div class="task-section">
-      <p>2. Answer the Questions</p>
-      <label>1. Who are the main characters in this scene?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-      <label>2. What kind of animal is Flash?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-      <label>3. Why do Judy and Nick go to the DMV?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-      <label>4. How does Flash react to Nick’s joke?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-      <label>5. How does Judy feel during this scene? Why?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-    </div>
-
-    <div class="task-section">
-      <p>3. Matching Task</p>
-      <table>
-        <thead>
-          <tr><th>A (Words)</th><th>B (Select Match)</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-| 1.       |        |
-| 2.       |                |
-| 3.            |           |
-| 4.              |      |
-
-
-            <td>1. Judy Hopps</td>
-            <td>
-              <select>
-                <option value="">Select...</option>
-                <option>A. Makes a joke to test Flash’s reaction</option>
-                <option>B. A sloth who types very slowly</option>
-                <option>C. A rabbit police officer in a hurry</option>
-                <option>D. A place where animals register vehicles</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>2. Nick Wilde</td>
-            <td>
-              <select>
-                <option value="">Select...</option>
-                <option>A. Makes a joke to test Flash’s reaction</option>
-                <option>B. A sloth who types very slowly</option>
-                <option>C. A rabbit police officer in a hurry</option>
-                <option>D. A place where animals register vehicles</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>3. Flash</td>
-            <td>
-              <select>
-                <option value="">Select...</option>
-                <option>A. Makes a joke to test Flash’s reaction</option>
-                <option>B. A sloth who types very slowly</option>
-                <option>C. A rabbit police officer in a hurry</option>
-                <option>D. A place where animals register vehicles</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>4. DMV</td>
-            <td>
-              <select>
-                <option value="">Select...</option>
-                <option>A. Makes a joke to test Flash’s reaction</option>
-                <option>B. A sloth who types very slowly</option>
-                <option>C. A rabbit police officer in a hurry</option>
-                <option>D. A place where animals register vehicles</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <button class="check-button" onclick="checkAnswers()">Check Answers</button>
-    <div id="score" class="score"></div>
   </div>
-</div>
 
-<footer>
-  <p>© 2025 Listening Through Animation – Designed for English Lessons</p>
-</footer>
+  <footer>
+    <p>© 2025 Listening Through Animation – Designed for English Lessons</p>
+  </footer>
 
-<script>
-  // Чекбоксы ведут себя как радиокнопки
-  document.querySelectorAll('.statement').forEach(statement => {
-    const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(chk => {
-      chk.addEventListener('change', () => {
-        checkboxes.forEach(box => {
-          if (box !== chk) box.checked = false;
+  <script>
+    // Чекбоксы ведут себя как радиокнопки
+    document.querySelectorAll('.statement').forEach(statement => {
+      const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(chk => {
+        chk.addEventListener('change', () => {
+          checkboxes.forEach(box => {
+            if (box !== chk) box.checked = false;
+          });
         });
       });
     });
-  });
 
-  function lockInput(event, input) {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      input.setAttribute('readonly', true);
+    function lockInput(event, input) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        input.setAttribute('readonly', true);
+      }
     }
-  }
 
-  function checkAnswers() {
-    let score = 0;
-    const total = 14;
+    function checkAnswers() {
+      let score = 0;
+      const total = 14;
 
-    // === TRUE/FALSE ===
-    const trueFalseAnswers = [true, false, false, true, false];
-    const trueFalseSection = document.querySelectorAll('.task-section')[0];
-    trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
-      const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
-      const isTrueChecked = checkboxes[0].checked;
-      const correct = isTrueChecked === trueFalseAnswers[i];
-      statement.classList.remove('correct', 'incorrect');
-      statement.classList.add(correct ? 'correct' : 'incorrect');
-      if (correct) score++;
-    });
+      // === TRUE/FALSE ===
+      const trueFalseAnswers = [true, false, false, true, false];
+      const trueFalseSection = document.querySelectorAll('.task-section')[0];
+      trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
+        const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+        const isTrueChecked = checkboxes[0].checked;
+        const correct = isTrueChecked === trueFalseAnswers[i];
+        statement.classList.remove('correct', 'incorrect');
+        statement.classList.add(correct ? 'correct' : 'incorrect');
+        if (correct) score++;
+      });
 
-const expectedAnswers = [
-  'Judy Hopps, Nick Wilde, Flash',
-  'A sloth',
-  'To get license info',
-  'Very slowly',
-  'Frustrated, because everything is too slow'
-];
+      const expectedAnswers = [
+        'Judy Hopps, Nick Wilde, Flash',
+        'A sloth',
+        'To get license info',
+        'Very slowly',
+        'Frustrated, because everything is too slow'
+      ];
 
-const normalize = str => str
-  .toLowerCase()
-  .replace(/[.,;!?]/g, '')  // убираем знаки препинания
-  .trim();
+      const normalize = str => str
+        .toLowerCase()
+        .replace(/[.,;!?]/g, '')  // убираем знаки препинания
+        .trim();
 
-const questionSection = document.querySelectorAll('.task-section')[1];
+      const questionSection = document.querySelectorAll('.task-section')[1];
 
-questionSection.querySelectorAll('input[type="text"]').forEach((input, i) => {
-  const userAnswer = normalize(input.value);
-  const expectedAnswer = normalize(expectedAnswers[i]);
-  const correct = userAnswer.includes(expectedAnswer); // или: userAnswer === expectedAnswer
-  input.classList.remove('correct', 'incorrect');
-  input.classList.add(correct ? 'correct' : 'incorrect');
-  if (correct) score++;
-});
-
+      questionSection.querySelectorAll('input[type="text"]').forEach((input, i) => {
+        const userAnswer = normalize(input.value);
+        const expectedAnswer = normalize(expectedAnswers[i]);
+        const correct = userAnswer.includes(expectedAnswer); // или: userAnswer === expectedAnswer
+        input.classList.remove('correct', 'incorrect');
+        input.classList.add(correct ? 'correct' : 'incorrect');
+        if (correct) score++;
+      });
 
 
-    // === MATCHING TASK ===
-    const correctMatches = [
-      'C. A rabbit police officer in a hurry',
-      'A. Makes a joke to test Flash’s reaction',
-      'B. A sloth who types very slowly',
-      'D. A place where animals register vehicles'
-    ];
-    const matchSection = document.querySelectorAll('.task-section')[2];
-    matchSection.querySelectorAll('select').forEach((select, i) => {
-      const correct = select.value === correctMatches[i];
-      select.classList.remove('correct', 'incorrect');
-      select.classList.add(correct ? 'correct' : 'incorrect');
-      if (correct) score++;
-    });
 
-    // === DISPLAY RESULT ===
-    document.getElementById('score').textContent = `Your score: ${score} / ${total}`;
-  }
-</script>
+      // === MATCHING TASK ===
+      const correctMatches = [
+        'C. A rabbit police officer in a hurry',
+        'A. Makes a joke to test Flash’s reaction',
+        'B. A sloth who types very slowly',
+        'D. A place where animals register vehicles'
+      ];
+      const matchSection = document.querySelectorAll('.task-section')[2];
+      matchSection.querySelectorAll('select').forEach((select, i) => {
+        const correct = select.value === correctMatches[i];
+        select.classList.remove('correct', 'incorrect');
+        select.classList.add(correct ? 'correct' : 'incorrect');
+        if (correct) score++;
+      });
+
+      // === DISPLAY RESULT ===
+      document.getElementById('score').textContent = `Your score: ${score} / ${total}`;
+    }
+  </script>
 
 
 </body>
+
 </html>

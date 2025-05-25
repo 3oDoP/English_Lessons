@@ -1,228 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Animated Films for Listening Practice</title>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-<div class="background-decor"></div>
-<header class="dynamic-island">
-  <h1>Animated Films for Listening Practice</h1>
-  <a href="index.html" class="main-button">Main Page</a>
-</header>
+  <div class="background-decor"></div>
+  <header class="dynamic-island">
+    <h1>Animated Films for Listening Practice</h1>
+    <a href="index.html" class="main-button">Main Page</a>
+  </header>
 
-<div class="container">
-  <div class="video-block">
-    <h2>Zootopia | Meet the Sloth</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J4m3kjE2gUg?si=miyGirmiBxxv_246" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<div class="paragraph-task">
-  <p>Short Description:  
-  In this episode, Dora and Boots help a sleepy little bear find her way home so she can hibernate. Along the way, they solve problems and overcome obstacles, teaching young viewers about kindness, helping others, and basic directions.</p>
-</div>
+  <div class="container">
+    <div class="video-block">
+      <h2>Zootopia | Meet the Sloth</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/J4m3kjE2gUg?si=miyGirmiBxxv_246"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="paragraph-task">
+        <p>Short Description:
+          In this episode, Dora and Boots help a sleepy little bear find her way home so she can hibernate. Along the
+          way, they solve problems and overcome obstacles, teaching young viewers about kindness, helping others, and
+          basic directions.</p>
+      </div>
 
-<div class="task-section">
-  <p>1. True / False</p>
-  <div class="statement">The bear is wide awake and wants to play.
-    <label><input type="checkbox"> True</label>
-    <label><input type="checkbox"> False</label>
+      <div class="task-section">
+        <p>1. True / False</p>
+        <div class="statement">The bear is wide awake and wants to play.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">Dora and Boots help the bear find her home.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">The journey involves solving puzzles and using a map.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">The bear gets lost in the middle of the night.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+        <div class="statement">Dora teaches the bear how to stay awake longer.
+          <label><input type="checkbox"> True</label>
+          <label><input type="checkbox"> False</label>
+        </div>
+      </div>
+
+      <div class="task-section">
+        <p>2. Answer the Questions</p>
+        <label>1. Why is the bear sleepy?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+        <label>2. What do Dora and Boots do to help the bear?<br><input type="text"
+            onkeydown="lockInput(event, this)"></label>
+        <label>3. What tools do they use during their journey?<br><input type="text"
+            onkeydown="lockInput(event, this)"></label>
+        <label>4. What obstacles do they face on the way?<br><input type="text"
+            onkeydown="lockInput(event, this)"></label>
+        <label>5. How does the story end?<br><input type="text" onkeydown="lockInput(event, this)"></label>
+      </div>
+
+      <div class="task-section">
+        <p>3. Matching Task</p>
+        <table>
+          <thead>
+            <tr>
+              <th>A (Items)</th>
+              <th>B (Select Match)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Sleepy Bear</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. The guide for the journey</option>
+                  <option>B. Wants to go home to sleep</option>
+                  <option>C. Dora’s monkey friend</option>
+                  <option>D. Helps solve problems</option>
+                  <option>E. Where the bear hibernates</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>2. Dora</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. The guide for the journey</option>
+                  <option>B. Wants to go home to sleep</option>
+                  <option>C. Dora’s monkey friend</option>
+                  <option>D. Helps solve problems</option>
+                  <option>E. Where the bear hibernates</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>3. Boots</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. The guide for the journey</option>
+                  <option>B. Wants to go home to sleep</option>
+                  <option>C. Dora’s monkey friend</option>
+                  <option>D. Helps solve problems</option>
+                  <option>E. Where the bear hibernates</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>4. Map</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. The guide for the journey</option>
+                  <option>B. Wants to go home to sleep</option>
+                  <option>C. Dora’s monkey friend</option>
+                  <option>D. Helps solve problems</option>
+                  <option>E. Where the bear hibernates</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>5. Cave</td>
+              <td>
+                <select>
+                  <option value="">Select...</option>
+                  <option>A. The guide for the journey</option>
+                  <option>B. Wants to go home to sleep</option>
+                  <option>C. Dora’s monkey friend</option>
+                  <option>D. Helps solve problems</option>
+                  <option>E. Where the bear hibernates</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <button class="check-button" onclick="checkAnswers()">Check Answers</button>
+      <div id="score" class="score"></div>
+    </div>
   </div>
-  <div class="statement">Dora and Boots help the bear find her home.
-    <label><input type="checkbox"> True</label>
-    <label><input type="checkbox"> False</label>
-  </div>
-  <div class="statement">The journey involves solving puzzles and using a map.
-    <label><input type="checkbox"> True</label>
-    <label><input type="checkbox"> False</label>
-  </div>
-  <div class="statement">The bear gets lost in the middle of the night.
-    <label><input type="checkbox"> True</label>
-    <label><input type="checkbox"> False</label>
-  </div>
-  <div class="statement">Dora teaches the bear how to stay awake longer.
-    <label><input type="checkbox"> True</label>
-    <label><input type="checkbox"> False</label>
-  </div>
-</div>
 
-<div class="task-section">
-  <p>2. Answer the Questions</p>
-  <label>1. Why is the bear sleepy?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-  <label>2. What do Dora and Boots do to help the bear?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-  <label>3. What tools do they use during their journey?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-  <label>4. What obstacles do they face on the way?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-  <label>5. How does the story end?<br><input type="text" onkeydown="lockInput(event, this)"></label>
-</div>
+  <footer>
+    <p>© 2025 Listening Through Animation – Designed for English Lessons</p>
+  </footer>
 
-<div class="task-section">
-  <p>3. Matching Task</p>
-  <table>
-    <thead>
-      <tr><th>A (Items)</th><th>B (Select Match)</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1. Sleepy Bear</td>
-        <td>
-          <select>
-            <option value="">Select...</option>
-            <option>A. The guide for the journey</option>
-            <option>B. Wants to go home to sleep</option>
-            <option>C. Dora’s monkey friend</option>
-            <option>D. Helps solve problems</option>
-            <option>E. Where the bear hibernates</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>2. Dora</td>
-        <td>
-          <select>
-            <option value="">Select...</option>
-            <option>A. The guide for the journey</option>
-            <option>B. Wants to go home to sleep</option>
-            <option>C. Dora’s monkey friend</option>
-            <option>D. Helps solve problems</option>
-            <option>E. Where the bear hibernates</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>3. Boots</td>
-        <td>
-          <select>
-            <option value="">Select...</option>
-            <option>A. The guide for the journey</option>
-            <option>B. Wants to go home to sleep</option>
-            <option>C. Dora’s monkey friend</option>
-            <option>D. Helps solve problems</option>
-            <option>E. Where the bear hibernates</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>4. Map</td>
-        <td>
-          <select>
-            <option value="">Select...</option>
-            <option>A. The guide for the journey</option>
-            <option>B. Wants to go home to sleep</option>
-            <option>C. Dora’s monkey friend</option>
-            <option>D. Helps solve problems</option>
-            <option>E. Where the bear hibernates</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>5. Cave</td>
-        <td>
-          <select>
-            <option value="">Select...</option>
-            <option>A. The guide for the journey</option>
-            <option>B. Wants to go home to sleep</option>
-            <option>C. Dora’s monkey friend</option>
-            <option>D. Helps solve problems</option>
-            <option>E. Where the bear hibernates</option>
-          </select>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-    <button class="check-button" onclick="checkAnswers()">Check Answers</button>
-    <div id="score" class="score"></div>
-  </div>
-</div>
-
-<footer>
-  <p>© 2025 Listening Through Animation – Designed for English Lessons</p>
-</footer>
-
-<script>
-  // Чекбоксы ведут себя как радиокнопки
-  document.querySelectorAll('.statement').forEach(statement => {
-    const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(chk => {
-      chk.addEventListener('change', () => {
-        checkboxes.forEach(box => {
-          if (box !== chk) box.checked = false;
+  <script>
+    // Чекбоксы ведут себя как радиокнопки
+    document.querySelectorAll('.statement').forEach(statement => {
+      const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(chk => {
+        chk.addEventListener('change', () => {
+          checkboxes.forEach(box => {
+            if (box !== chk) box.checked = false;
+          });
         });
       });
     });
-  });
 
-  function lockInput(event, input) {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      input.setAttribute('readonly', true);
+    function lockInput(event, input) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        input.setAttribute('readonly', true);
+      }
     }
-  }
 
-  function checkAnswers() {
-    let score = 0;
-    const total = 14;
+    function checkAnswers() {
+      let score = 0;
+      const total = 14;
 
-    // === TRUE/FALSE ===
-    const trueFalseAnswers = [true, false, false, true, false];
-    const trueFalseSection = document.querySelectorAll('.task-section')[0];
-    trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
-      const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
-      const isTrueChecked = checkboxes[0].checked;
-      const correct = isTrueChecked === trueFalseAnswers[i];
-      statement.classList.remove('correct', 'incorrect');
-      statement.classList.add(correct ? 'correct' : 'incorrect');
-      if (correct) score++;
-    });
+      // === TRUE/FALSE ===
+      const trueFalseAnswers = [true, false, false, true, false];
+      const trueFalseSection = document.querySelectorAll('.task-section')[0];
+      trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
+        const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
+        const isTrueChecked = checkboxes[0].checked;
+        const correct = isTrueChecked === trueFalseAnswers[i];
+        statement.classList.remove('correct', 'incorrect');
+        statement.classList.add(correct ? 'correct' : 'incorrect');
+        if (correct) score++;
+      });
 
-const expectedAnswers = [
-  'Judy Hopps, Nick Wilde, Flash',
-  'A sloth',
-  'To get license info',
-  'Very slowly',
-  'Frustrated, because everything is too slow'
-];
+      const expectedAnswers = [
+        'Judy Hopps, Nick Wilde, Flash',
+        'A sloth',
+        'To get license info',
+        'Very slowly',
+        'Frustrated, because everything is too slow'
+      ];
 
-const normalize = str => str
-  .toLowerCase()
-  .replace(/[.,;!?]/g, '')  // убираем знаки препинания
-  .trim();
+      const normalize = str => str
+        .toLowerCase()
+        .replace(/[.,;!?]/g, '')  // убираем знаки препинания
+        .trim();
 
-const questionSection = document.querySelectorAll('.task-section')[1];
+      const questionSection = document.querySelectorAll('.task-section')[1];
 
-questionSection.querySelectorAll('input[type="text"]').forEach((input, i) => {
-  const userAnswer = normalize(input.value);
-  const expectedAnswer = normalize(expectedAnswers[i]);
-  const correct = userAnswer.includes(expectedAnswer); // или: userAnswer === expectedAnswer
-  input.classList.remove('correct', 'incorrect');
-  input.classList.add(correct ? 'correct' : 'incorrect');
-  if (correct) score++;
-});
-
+      questionSection.querySelectorAll('input[type="text"]').forEach((input, i) => {
+        const userAnswer = normalize(input.value);
+        const expectedAnswer = normalize(expectedAnswers[i]);
+        const correct = userAnswer.includes(expectedAnswer); // или: userAnswer === expectedAnswer
+        input.classList.remove('correct', 'incorrect');
+        input.classList.add(correct ? 'correct' : 'incorrect');
+        if (correct) score++;
+      });
 
 
-    // === MATCHING TASK ===
-    const correctMatches = [
-      'C. A rabbit police officer in a hurry',
-      'A. Makes a joke to test Flash’s reaction',
-      'B. A sloth who types very slowly',
-      'D. A place where animals register vehicles'
-    ];
-    const matchSection = document.querySelectorAll('.task-section')[2];
-    matchSection.querySelectorAll('select').forEach((select, i) => {
-      const correct = select.value === correctMatches[i];
-      select.classList.remove('correct', 'incorrect');
-      select.classList.add(correct ? 'correct' : 'incorrect');
-      if (correct) score++;
-    });
 
-    // === DISPLAY RESULT ===
-    document.getElementById('score').textContent = `Your score: ${score} / ${total}`;
-  }
-</script>
+      // === MATCHING TASK ===
+      const correctMatches = [
+        'C. A rabbit police officer in a hurry',
+        'A. Makes a joke to test Flash’s reaction',
+        'B. A sloth who types very slowly',
+        'D. A place where animals register vehicles'
+      ];
+      const matchSection = document.querySelectorAll('.task-section')[2];
+      matchSection.querySelectorAll('select').forEach((select, i) => {
+        const correct = select.value === correctMatches[i];
+        select.classList.remove('correct', 'incorrect');
+        select.classList.add(correct ? 'correct' : 'incorrect');
+        if (correct) score++;
+      });
+
+      // === DISPLAY RESULT ===
+      document.getElementById('score').textContent = `Your score: ${score} / ${total}`;
+    }
+  </script>
 
 
 </body>
+
 </html>
