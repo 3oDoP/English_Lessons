@@ -180,7 +180,7 @@
       const total = 14;
 
       // === TRUE/FALSE ===
-      const trueFalseAnswers = [true, false, false, true, false];
+      const trueFalseAnswers = [true, false, true, false, false];
       const trueFalseSection = document.querySelectorAll('.task-section')[0];
       trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
         const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
@@ -192,11 +192,11 @@
       });
 
       const expectedAnswers = [
-        'Judy Hopps, Nick Wilde, Flash',
-        'A sloth',
-        'To get license info',
-        'Very slowly',
-        'Frustrated, because everything is too slow'
+        'What is obedience?',
+        'Because they think a rule is unfair or they want to do something else',
+        'Simon says, crossing the road with a parent, following school rules',
+        'He thinks it’s important to follow rules but also to think for yourself',
+        'To understand when to follow rules and when to question them'
       ];
 
       const normalize = str => str
@@ -219,10 +219,11 @@
 
       // === MATCHING TASK ===
       const correctMatches = [
-        'C. A rabbit police officer in a hurry',
-        'A. Makes a joke to test Flash’s reaction',
-        'B. A sloth who types very slowly',
-        'D. A place where animals register vehicles'
+        'B. The main character',
+        'C. The act of following instructions',
+        'A. Things we are expected to follow',
+        'E. Used by Hugo to explore ideas',
+        'D. Helps understand complex ideas'
       ];
       const matchSection = document.querySelectorAll('.task-section')[2];
       matchSection.querySelectorAll('select').forEach((select, i) => {

@@ -205,11 +205,11 @@
           });
 
           const expectedAnswers = [
-            'Judy Hopps, Nick Wilde, Flash',
-            'A sloth',
-            'To get license info',
-            'Very slowly',
-            'Frustrated, because everything is too slow'
+            'They are looking for a night light',
+            'It takes place at night',
+            'Swiper the fox',
+            'The map',
+            'Boots the monkey'
           ];
 
           const normalize = str => str
@@ -232,10 +232,12 @@
 
           // === MATCHING TASK ===
           const correctMatches = [
-            'C. A rabbit police officer in a hurry',
-            'A. Makes a joke to test Flash’s reaction',
-            'B. A sloth who types very slowly',
-            'D. A place where animals register vehicles'
+            'D. The main character of the story',
+            'A. A monkey who helps Dora',
+            'B. Shows the way during the journey',
+            'C. Helps Dora see in the dark',
+            'E. A fox who tries to stop them',
+            'F. The object they are searching for'
           ];
           const matchSection = document.querySelectorAll('.task-section')[2];
           matchSection.querySelectorAll('select').forEach((select, i) => {

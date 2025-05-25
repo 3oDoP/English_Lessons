@@ -179,7 +179,7 @@
       const total = 14;
 
       // === TRUE/FALSE ===
-      const trueFalseAnswers = [true, false, false, true, false];
+      const trueFalseAnswers = [true, false, true, false, true];
       const trueFalseSection = document.querySelectorAll('.task-section')[0];
       trueFalseSection.querySelectorAll('.statement').forEach((statement, i) => {
         const checkboxes = statement.querySelectorAll('input[type="checkbox"]');
@@ -191,11 +191,11 @@
       });
 
       const expectedAnswers = [
-        'Judy Hopps, Nick Wilde, Flash',
-        'A sloth',
-        'To get license info',
-        'Very slowly',
-        'Frustrated, because everything is too slow'
+        'A flat shape with straight sides',
+        'Three',
+        'A classroom',
+        'A square',
+        'Because it has curved sides and no corners'
       ];
 
       const normalize = str => str
@@ -218,10 +218,11 @@
 
       // === MATCHING TASK ===
       const correctMatches = [
-        'C. A rabbit police officer in a hurry',
-        'A. Makes a joke to test Flash’s reaction',
-        'B. A sloth who types very slowly',
-        'D. A place where animals register vehicles'
+        'B. Has three sides',
+        'D. Has four sides and right angles',
+        'C. Has five sides',
+        'E. A closed shape with straight sides',
+        'A. Not a polygon'
       ];
       const matchSection = document.querySelectorAll('.task-section')[2];
       matchSection.querySelectorAll('select').forEach((select, i) => {
